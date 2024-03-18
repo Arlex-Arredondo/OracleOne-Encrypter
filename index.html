@@ -6,34 +6,43 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
     <main>
-        <article class="encrypter-container">
-            <textarea name="main-text" id="" cols="30" rows="10">
+        <div class="flex-container">
+            <div class="encrypter-container">
+                <textarea  id="main-text">
                 
-            </textarea>
-            <button class="btn-encrypt">
+                </textarea>
+                <div class="btn-wrapper">
+                    <button class="btn-encrypt">
+                        Encrypt
+                    </button>
+                    <button class="btn-decrypt">
+                        Decrypt
+                    </button>
+                    <button class="btn-copy">
+                        Copy
+                    </button>
+                </div>
+            </div>
 
-            </button>
-            <button  class="btn-decrypt">
-                
-            </button>
-            <button class="btn-copy">
-                
-            </button>
+            <div class="result-container">
+                <p class="active">
+                    No hay ningun mensaje para procesar
+                </p>
+                <button class="btn-copy-2">
+                    Copy
+                </button>
+            </div>
 
-        </article class="result-container">
-        <article>
-            <p class="result">
+        </div>
 
-            </p>
-            <button class="btn-copy-result">
-
-            </button>
-        </article>
     </main>
+    
+    <script src="app.js"></script>
 
     
 </body>
