@@ -24,7 +24,7 @@ function encrypt(){
     pText.textContent = textToEncrypt;
     pText.setAttribute('data-state', 'active');
 }
-/*jaimenters  =     */
+
 function decrypt(){
     let textToDecrypt = txtArea.value;
     textToDecrypt = textToDecrypt.replaceAll("ai","a");
@@ -35,7 +35,7 @@ function decrypt(){
     
     console.log(textToDecrypt);
     
-    pText.textContent = textToDecrypt;
+    pText.textContent = textToDecrypt;        
     pText.setAttribute('data-state', 'active');
 }
 
