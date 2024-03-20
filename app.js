@@ -53,13 +53,9 @@ function copy(e){
 }
 
 function checkLetterOnkeyPressed(e){
-    // Get the pressed key
     const key = e.key;
 
-    // Check if the pressed key is a lowercase alphabetic character
     if (!/[a-z ]/.test(key) && !e.ctrlKey && !e.altKey && key !== 'Backspace') {
-        // Prevent the default action (typing) if the key is not a lowercase alphabetic character
-        
         e.preventDefault();
     }
 }
