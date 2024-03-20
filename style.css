@@ -54,16 +54,17 @@ p{
     place-items: center;
 }
 
-.active{
+p[data-state="active"]{
     font-size: 1rem;
     place-content: start;
     color: rgb(235, 217, 217);
 }
 
-.inactive{
+p[data-state="inactive"]{
     font-weight: bold;
     font-size: 30px;
     text-align: center;
+    color:white;
 }
 textarea{
     resize:none;
